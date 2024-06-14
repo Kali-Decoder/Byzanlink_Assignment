@@ -13,11 +13,29 @@ npx hardhat run scripts/deploy.js
 ```
 
 ```
-# EquityToken deployed to: 0x3258D8aDe2E6b9cc2FcC63fFc2F8cAd2D4AbAfA2
-# WhiteListManager deployed to: 0x7990300697D8514a84E5B9e5dFA39d58F48D4F19
-# Deploying EquityVesting...
-# EquityVesting deployed to: 0x6B4B7Fef5097c05B290f8300dc3fE8515785CfE8
+EquityToken deployed to: 0x76fF6A4599b69561B500FAa18981b540A50b692C
+WhiteListManager deployed to: 0xaF60c1A5fb9f878F3CB09758b6449843c09DbE7C
+Deploying EquityVesting...
+EquityVesting deployed to: 0xD1621e7E2b6Bd89EE72C1efa9FA89CFd3b148DDf
+Successfully submitted source code for contract
+contracts/utils/TestEquityToken.sol:TestEquityToken at 0x76fF6A4599b69561B500FAa18981b540A50b692C
+for verification on the block explorer. Waiting for verification result...
 
-Deployed on Metis - Sepolia Testnet
+Successfully verified contract TestEquityToken on the block explorer.
+https://sepolia.etherscan.io/address/0x76fF6A4599b69561B500FAa18981b540A50b692C#code
+Successfully submitted source code for contract
+contracts/EquityVesting.sol:EquityVesting at 0xD1621e7E2b6Bd89EE72C1efa9FA89CFd3b148DDf
+for verification on the block explorer. Waiting for verification result...
+
+Successfully verified contract EquityVesting on the block explorer.
+https://sepolia.etherscan.io/address/0xD1621e7E2b6Bd89EE72C1efa9FA89CFd3b148DDf#code
+Successfully submitted source code for contract
+contracts/utils/WhitelistManager.sol:WhitelistManager at 0xaF60c1A5fb9f878F3CB09758b6449843c09DbE7C
+for verification on the block explorer. Waiting for verification result...
+
+Successfully verified contract WhitelistManager on the block explorer.
+https://sepolia.etherscan.io/address/0xaF60c1A5fb9f878F3CB09758b6449843c09DbE7C#code
+
+Deployed on  Sepolia Testnet
 ```
 ```

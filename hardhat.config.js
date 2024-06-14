@@ -2,7 +2,7 @@ require("@nomicfoundation/hardhat-toolbox");
 require("@nomicfoundation/hardhat-ethers");
 require("@nomicfoundation/hardhat-verify")
 require("dotenv").config();
-const { PRIVATE_KEY } = process.env;
+const { PRIVATE_KEY,SEPOLIA_KEY,INFURA_ID } = process.env;
 module.exports = {
   defaultNetwork: "localhost",
   networks: {
@@ -13,10 +13,15 @@ module.exports = {
       url: "https://sepolia.metisdevops.link",
       accounts: [PRIVATE_KEY],
     },
+    sepoliaTestnet:{
+      url: `https://sepolia.infura.io/v3/${INFURA_ID}`,
+      accounts: [PRIVATE_KEY],
+    }
   },
   etherscan: {
     apiKey: {
       metisSepolia: "apiKey is not required, just set a placeholder",
+      sepolia:SEPOLIA_KEY
     },
     customChains:[ {
       network: "metisSepolia",
